@@ -1,0 +1,10 @@
+.header {
+    height: 100%;
+    position: absolute;
+    &-box {
+        position: relative;
+        top: 40%;
+        padding-left: 10%;
+        transform: translateY(-50%);
+    }
+}
