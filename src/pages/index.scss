@@ -10,6 +10,11 @@
     --background-v2: #{$background-v2};
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body, html {
     background-color: $background;
     font-size: $font-size;
