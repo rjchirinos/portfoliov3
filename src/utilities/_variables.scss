@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Montserrat:wght@600;700&display=swap');
+
+// COLOR:
+$primary: #68349B;
+$primary-v1: rgba($primary, 0.84);
+$primary-v2: rgba($primary, 0.62);
+
+$background: #1E1E28;
+$background-v1: lighten($background, 8%);
+$background-v2: lighten($background, 16%);
+
+$white: #FFFFFF;
+$white-v1: rgba($white, 0.84);
+$white-v2: rgba($white, 0.62);
+
+// FONTS
+
+$font-family: "Fira Mono", monospace;
+$font-size: 16px;
+$font-weight: 400;
+
+$h-font-family: "Montserrat", sans-serif;
+$h-font-weight: 600;
+$h1-font-size: 64px;
+$h2-font-size: 48px;

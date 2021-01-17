@@ -1,0 +1,33 @@
+@import '../utilities/variables';
+
+:root {
+    --primary: #{$primary};
+    --primary-v1: #{$primary-v1};
+    --primary-v2: #{$primary-v2};
+
+    --background: #{$background};
+    --background-v1: #{$background-v1};
+    --background-v2: #{$background-v2};
+}
+
+body, html {
+    background-color: $background;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    color: $white-v1;
+}
+
+h1, h2, h3 , h4, h5, h6 {
+    font-family: $h-font-family;
+    font-weight: $h-font-weight;
+}
+
+h1 {
+    font-size: $h1-font-size;
+    color: $white
+}
+
+h2 {
+    font-size: $h2-font-size
+}
