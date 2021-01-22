@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaBars } from "react-icons/fa";
+import SideMenu from '../SideMenu/SideMenu';
 // import "./Navbar.scss"
 
 const menuItems = [
@@ -24,6 +25,8 @@ const menuItems = [
 
 
 const Navbar = () => {
+    const [isSideMenuOpen, setSideMenuOpen] = useState(false);
+
     return (
         <nav className="py-6 md:py-0 md:pt-8 px-5 sm:px-16 md:px-28">
             <ul className={`md:flex md:justify-end font-sans uppercase hidden`.trim()}>
@@ -35,7 +38,10 @@ const Navbar = () => {
                     </li>
                 ))}
             </ul>
-            <FaBars className="md:hidden text-2xl" />
+            <button onClick={() => setSideMenuOpen(true)}>
+                <FaBars className="md:hidden text-2xl text-primary" />
+            </button>
+            <SideMenu items={menuItems} isOpen={isSideMenuOpen} close={() => setSideMenuOpen(false)} />
         </nav>
     );
 }
