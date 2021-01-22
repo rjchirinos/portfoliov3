@@ -1,6 +1,12 @@
 .header {
     height: 100%;
+    width: 100%;
     position: absolute;
+    background-image: url("../../assets/hero-vector.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top 4rem right 0;
+    padding-bottom: 4rem;
     &-box {
         position: relative;
         top: 40%;
