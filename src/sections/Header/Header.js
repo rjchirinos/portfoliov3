@@ -16,10 +16,10 @@ const Header = ({ c }) => {
             <Navbar />
             <div className="header-box">
                 <p className="tint">{c("gretting")}</p>
-                <h1 className="header-title">{c("titleName")}</h1>
-                <h2 style={{ marginBottom: "1rem" }} className="header-subtitle">{c("subtitle.first")} <span className="tint">{c("subtitle.second")}</span></h2>
+                <h1 className="header-title mb-3">{c("titleName")}</h1>
+                <h2 style={{ marginBottom: "1rem" }} className="header-subtitle mb-2">{c("subtitle.first")} <span className="tint">{c("subtitle.second")}</span></h2>
                 <SocialRow iconSize={!isMedium ? "32px" : "24px"} margin={!isMedium ? "30px" : "20px"} />
-                <Button style={{ marginTop: "1rem" }}>Say hello!</Button>
+                <Button className="mt-6">Say hello!</Button>
             </div>
         </section>
     );
