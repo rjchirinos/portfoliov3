@@ -12,5 +12,14 @@
         top: 40%;
         padding-left: 10%;
         transform: translateY(-50%);
+        @media (max-width: 768px) {
+            padding-left: 8%;
+            & > * {
+                margin-bottom: 0.4rem;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        background-image: none;
     }
 }

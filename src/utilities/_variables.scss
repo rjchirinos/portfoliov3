@@ -16,10 +16,13 @@ $white-v2: rgba($white, 0.58);
 // FONTS
 
 $font-family: "Fira Mono", monospace;
-$font-size: 16px;
+$font-size: 1rem;
 $font-weight: 400;
 
 $h-font-family: "Montserrat", sans-serif;
 $h-font-weight: 600;
-$h1-font-size: 64px;
-$h2-font-size: 48px;
+$h1-font-size: 4rem;
+$h2-font-size: 3rem;
+
+$h1-font-size-mobile: 3rem;
+$h2-font-size-mobile: 2rem;

@@ -30,11 +30,17 @@ h1, h2, h3 , h4, h5, h6 {
 
 h1 {
     font-size: $h1-font-size;
-    color: $white
+    color: $white;
+    @media screen and (max-width: 768px) {
+    font-size: $h1-font-size-mobile;
+    }
 }
 
 h2 {
-    font-size: $h2-font-size
+    font-size: $h2-font-size;
+    @media screen and (max-width: 768px) {
+        font-size: $h2-font-size-mobile;
+        }
 }
 
 .tint {
