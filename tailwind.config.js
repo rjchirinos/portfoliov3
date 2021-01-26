@@ -12,6 +12,9 @@ module.exports = {
         t1: "rgba(105, 52, 157, 0.84)",
         t2: "rgba(105, 52, 157, 0.62)"
       },
+      secondary: {
+        DEFAULT: "#2D9C90"
+      },
       background: {
         DEFAULT: "#1E1E28",
         light: "#2B2B35",

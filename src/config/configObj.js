@@ -4,5 +4,6 @@ export const configObj = {
     subtitle: {
         first: "I create stunnig",
         second: "webapps"
-    }
+    },
+    headerBtn: "Say hello!"
 }
