@@ -1,4 +1,5 @@
 import React from 'react';
+import SocialRow from "../SocialRow/SocialRow"
 import { FaTimes } from 'react-icons/fa';
 
 const SideMenu = ({ isOpen, close, items }) => {
@@ -18,6 +19,11 @@ const SideMenu = ({ isOpen, close, items }) => {
                     </li>
                 ))}
             </ul>
+            <SocialRow
+                containerClassName="absolute bottom-0 pl-11"
+                iconClassname="mb-6 text-xl"
+                vertical
+            />
             {/* </div> */}
         </div>
     );
