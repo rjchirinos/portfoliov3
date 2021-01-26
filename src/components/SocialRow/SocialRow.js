@@ -2,31 +2,21 @@ import React from 'react';
 import styled from "styled-components"
 import { socialAccounts } from './socialAccounts';
 
-const BoxContainer = styled.span`
-    display: flex;
-    flex-direction: ${props => props.direction || "row"};
-    font-size: ${props => props.iconSize || "16px"};
-`
-const IconContainer = styled.span`
-    margin-bottom: ${props => props.direction === "column" && !props.last && (props.margin || "16px")};
-    margin-right: ${props => props.direction !== "column" && !props.last && (props.margin || "16px")};
-`
-
-const SocialRow = ({ direction, iconSize, margin }) => {
+const SocialRow = ({ vertical, containerClassName, iconClassname }) => {
 
     const renderSocialAccounts = () => {
         return socialAccounts.map((account, index) => (
-            <IconContainer direction={direction} margin={margin} last={index + 1 === socialAccounts.length} >
+            <span className={`text-2xl md:text-3xl ${vertical ? "mb-3 md:mb-4" : "mr-3 md:mr-4"} ${iconClassname}`.trim()} >
                 <a className="row-icon" href={account.url}>{<account.icon />}</a>
-            </IconContainer>
+            </span>
         ))
     }
 
     return (
-        <div style={{ display: 'table-cell' }}>
-            <BoxContainer direction={direction} iconSize={iconSize}>
+        <div className={containerClassName} style={{ display: 'table-cell' }}>
+            <span className={`flex ${vertical ? "flex-col" : "flex-row"}`.trim()}>
                 {renderSocialAccounts()}
-            </BoxContainer>
+            </span>
         </div>
     );
 }
