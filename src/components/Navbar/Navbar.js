@@ -28,7 +28,7 @@ const Navbar = () => {
     const [isSideMenuOpen, setSideMenuOpen] = useState(false);
 
     return (
-        <nav className="py-6 md:py-0 md:pt-8 px-5 sm:px-16 md:px-28">
+        <nav className="py-6 md:py-0 md:pt-8 sm:px-16 md:px-20 lg:px-28">
             <ul className={`md:flex md:justify-end font-sans uppercase hidden`.trim()}>
                 {menuItems.map(i => (
                     <li className="ml-6">

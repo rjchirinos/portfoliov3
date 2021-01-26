@@ -17,6 +17,9 @@ module.exports = {
         light: "#2B2B35",
         light2: "#383842"
       },
+      text: {
+        DEFAULT: "rgba(255, 255, 255, 0.72)"
+      }
     },
     backgroundPosition: {
       "hero": "top 4rem right 0"
