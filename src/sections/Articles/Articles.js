@@ -6,7 +6,7 @@ import Button from "../../components/Button/Button";
 
 const Articles = () => {
     return (
-        <section id="articles">
+        <section className="pt-20" id="articles">
             <Layout title="Articles">
                 <div className="py-8 flex flex-col sm:flex-row flex-wrap w-100">
                     {articles.map(({ href, title, desc }) => (

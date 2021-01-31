@@ -7,7 +7,7 @@ import SocialRow from '../../components/SocialRow/SocialRow';
 
 const Contact = () => {
     return (
-        <section className="pt-80 pb-16 md:bg-contact-bg md:bg-auto md:bg-contact md:bg-no-repeat" id="contact">
+        <section className="pt-20 sm:pt-36 lg:pt-80 pb-16 md:bg-contact-bg md:bg-auto md:bg-contact md:bg-no-repeat" id="contact">
             <Layout title="Contact" >
                 <div className="flex flex-col lg:flex-row">
                     <div className="mt-6 lg:mt-0 lg:w-5/12">
