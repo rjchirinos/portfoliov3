@@ -28,7 +28,7 @@ const ContactForm = () => {
                         body: encode({ "form-name": "contact-form", ...values })
                     })
                         .then(() => {
-                            alert('Success');
+                            alert('Form submitted');
                             actions.resetForm()
                         })
                         .catch(() => {
@@ -38,7 +38,7 @@ const ContactForm = () => {
                 }}
             >
                 {({ values, setFieldValue }) => (
-                    <Form autoComplete="off" name="contact-demo" data-netlify={true}>
+                    <Form autoComplete="off" name="contact-form" data-netlify={true}>
                         <Field name="name">
                             {({ field }) => (
                                 <>
