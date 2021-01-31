@@ -3,27 +3,27 @@ import { FaLinkedin, FaGithub, FaDev, FaTwitter, FaEnvelope } from "react-icons/
 export const socialAccounts = [
     {
         id: "linkedin",
-        url: "google.com",
+        url: "https://www.linkedin.com/in/rjchirinos/",
         icon: FaLinkedin
     },
     {
         id: "github",
-        url: "google.com",
+        url: "https://github.com/rjchirinos",
         icon: FaGithub
     },
     {
         id: "dev",
-        url: "google.com",
+        url: "https://dev.to/rjchirinos",
         icon: FaDev
     },
     {
         id: "twitter",
-        url: "google.com",
+        url: "https://twitter.com/raulfullcode",
         icon: FaTwitter
     },
     {
         id: "email",
-        url: "google.com",
+        url: "mailto:raulstuf@gmail.com",
         icon: FaEnvelope
     },
 ]

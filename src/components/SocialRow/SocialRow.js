@@ -7,7 +7,7 @@ const SocialRow = ({ vertical, containerClassName, iconClassname }) => {
     const renderSocialAccounts = () => {
         return socialAccounts.map((account, index) => (
             <span className={`text-2xl md:text-3xl ${vertical ? "mb-3 md:mb-4" : "mr-3 md:mr-4"} ${iconClassname}`.trim()} >
-                <a className="row-icon" href={account.url}>{<account.icon />}</a>
+                <a className="row-icon" href={account.url} target="_blank" rel="noopener noreferrer">{<account.icon />}</a>
             </span>
         ))
     }
