@@ -18,5 +18,10 @@
             columns: 2;
         }
     /* } */
+    .center-horizontal {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%)
+    }
 }
 

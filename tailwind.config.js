@@ -35,7 +35,11 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         "hero-vector": "url(../images/hero-vector.png)",
-      })
+      }),
+      width: {
+        "3/10": "calc((100% / 3) - 3rem)",
+        "9/20": "calc((100% / 2) - 2rem)"
+      }
     },
   },
   variants: {

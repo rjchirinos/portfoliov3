@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Layout = ({ title, children }) => {
+const Layout = ({ title, children, preventPadding }) => {
     return (
-        <div className="flex flex-col lg:flex-row px-5 sm:pr-16 md:pr-20 lg:pr-28">
+        <div className={`flex flex-col lg:flex-row px-5 ${preventPadding ? "" : "sm:pr-16 md:pr-20 lg:pr-28"}`}>
             <div className="flex lg:flex-col sm:w-16 md:w-28 items-center">
                 <h2 className="uppercase text-vertical ">
                     {title}
