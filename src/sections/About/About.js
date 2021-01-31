@@ -17,7 +17,7 @@ const About = ({ c }) => {
                         <p>{c("about.first")} <span className="text-primary">{c("about.second")}</span> {c("about.third")}</p>
                         <p className="mt-2">
                             <span>{c("aboutP2")}</span>
-                            <ul className="list-disc col-count-2 mt-2">
+                            <ul className="list-disc list-inside md:list-outside col-count-2 mt-2">
                                 {technologies.map(tech => (
                                     <li>{tech}</li>
                                 ))}
