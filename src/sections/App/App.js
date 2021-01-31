@@ -1,6 +1,7 @@
 import React from 'react';
 import About from '../About/About';
 import Articles from '../Articles/Articles';
+import Contact from '../Contact/Contact';
 import Header from '../Header/Header';
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
             <Header />
             <About />
             <Articles />
+            <Contact />
         </div>
     );
 }
