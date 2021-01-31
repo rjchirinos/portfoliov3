@@ -10,5 +10,6 @@ export const configObj = {
         second: "develop effective solutions",
         third: "to adapt your brand or business to the digital world through code, providing you all the opportunities offered by having a greater reach and using the most advanced and popular technologies."
     },
-    aboutP2: "Technologies I have worked with:"
+    aboutP2: "Technologies I have worked with:",
+    headerBtn: "Say hello!"
 }
