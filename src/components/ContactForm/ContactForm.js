@@ -5,6 +5,13 @@ import TextArea from './TextArea';
 import Button from '../Button/Button';
 
 const ContactForm = () => {
+
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    }
+
     return (
         <div>
             <Formik
@@ -14,10 +21,24 @@ const ContactForm = () => {
                     email: "",
                     message: ""
                 }}
-                onSubmit={values => console.log(values)}
+                onSubmit={(values, actions) => {
+                    fetch("/", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                        body: encode({ "form-name": "contact-form", ...values })
+                    })
+                        .then(() => {
+                            alert('Success');
+                            actions.resetForm()
+                        })
+                        .catch(() => {
+                            alert('Error');
+                        })
+                        .finally(() => actions.setSubmitting(false))
+                }}
             >
                 {({ values, setFieldValue }) => (
-                    <Form autoComplete="off">
+                    <Form autoComplete="off" name="contact-demo" data-netlify={true}>
                         <Field name="name">
                             {({ field }) => (
                                 <>
