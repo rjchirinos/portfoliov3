@@ -21,7 +21,8 @@ module.exports = {
         light2: "#383842"
       },
       text: {
-        DEFAULT: "rgba(255, 255, 255, 0.72)"
+        DEFAULT: "rgba(255, 255, 255, 0.72)",
+        t2: "rgba(255, 255, 255, 0.54)"
       }
     },
     backgroundPosition: {
