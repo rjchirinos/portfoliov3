@@ -7,7 +7,7 @@ const technologies = ["React", "Node.js", "Express.js", "MongoDB", "MySQL", "Gat
 
 const About = ({ c }) => {
     return (
-        <section>
+        <section id="about">
             <Layout title="About">
                 <div className="py-4 md:pb-40 flex flex-col items-center md:flex-row-reverse">
                     <div className="bg-primary rounded-full w-4/5 max-w-xs mb-4">

@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+    body {
+        scroll-behavior: smooth;
+    }
     @media (min-width: 1024px) {
         .text-vertical {
             writing-mode: vertical-lr;
