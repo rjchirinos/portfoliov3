@@ -26,7 +26,8 @@ module.exports = {
       }
     },
     backgroundPosition: {
-      "hero": "top 4rem right 0"
+      "hero": "top 4rem right 0",
+      "contact": "bottom -6rem left 10rem"
     },
     maxHeight: {
       "sm-phone": "620px",
@@ -35,6 +36,7 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         "hero-vector": "url(../images/hero-vector.png)",
+        "contact-bg": "url(../images/contact-bg.png)"
       }),
       width: {
         "3/10": "calc((100% / 3) - 1rem)",

@@ -12,12 +12,12 @@ const menuItems = [
         href: "#articles",
         name: "Articles"
     },
+    // {
+    //     href: "#projects",
+    //     name: "Projects"
+    // },
     {
-        href: "#projects",
-        name: "Projects"
-    },
-    {
-        href: "#contac",
+        href: "#contact",
         name: "Contact",
         class: "text-primary"
     },
