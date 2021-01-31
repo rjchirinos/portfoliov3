@@ -2,7 +2,7 @@ import React from 'react';
 
 const TextArea = ({ name, value, onFocus, onBlur, onChange, placeholder }) => {
     return (
-        <div className="my-4 ">
+        <div className="mb-6 ">
             <textarea
                 name={name}
                 value={value}

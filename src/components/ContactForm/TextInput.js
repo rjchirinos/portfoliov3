@@ -2,7 +2,7 @@ import React from 'react';
 
 const TextInput = ({ name, value, onFocus, onBlur, onChange, placeholder }) => {
     return (
-        <div className="my-4 ">
+        <div className="mb-6 ">
             <input
                 name={name}
                 value={value}
