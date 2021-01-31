@@ -13,7 +13,7 @@ const Header = ({ c }) => {
                 <h1 className="header-title mb-3">{c("titleName")}</h1>
                 <h2 className="header-subtitle mb-6">{c("subtitle.first")} <span className="tint">{c("subtitle.second")}</span></h2>
                 <SocialRow />
-                <Button className="mt-6">{c("headerBtn")}</Button>
+                <Button onClick={() => window.open("mailto:raulstuf@gmail.com")} className="mt-6">{c("headerBtn")}</Button>
             </div>
         </section>
     );
