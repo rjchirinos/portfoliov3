@@ -23,5 +23,12 @@
         left: 50%;
         transform: translateX(-50%)
     }
+    @media (max-width: 768px) {
+        .md-d\:center-horizontal {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+    }
 }
 
