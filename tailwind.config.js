@@ -41,6 +41,21 @@ module.exports = {
       width: {
         "3/10": "calc((100% / 3) - 1rem)",
         "9/20": "calc((100% / 2) - 1rem)"
+      },
+      animation: {
+        "appear": "appear 0.8s linear"
+      },
+      keyframes: {
+        appear: {
+          "from": {
+            transform: "translateY(1rem)",
+            opacity: "0"
+          },
+          "to": {
+            transform: "translateY(0)",
+            opacity: "1"
+          }
+        }
       }
     },
   },
