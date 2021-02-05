@@ -30,6 +30,8 @@
     "react-icons": "^4.1.0",
     "sass": "^1.32.4",
     "styled-components": "^5.2.1",
+    "sweetalert2": "^10.14.0",
+    "sweetalert2-react-content": "^3.2.2",
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {

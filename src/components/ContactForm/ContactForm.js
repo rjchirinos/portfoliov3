@@ -3,6 +3,10 @@ import { Formik, Form, Field } from "formik";
 import TextInput from './TextInput';
 import TextArea from './TextArea';
 import Button from '../Button/Button';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
 
 const ContactForm = () => {
 
@@ -28,10 +32,21 @@ const ContactForm = () => {
                         body: encode({ "form-name": "contact-form", ...values })
                     })
                         .then(() => {
-                            alert('Form submitted');
+                            MySwal.fire({
+                                title: "Success!",
+                                icon: "success",
+                                text: "Your message was submitted successfuly",
+                                confirmButtonColor: "#68349B"
+                            })
                             actions.resetForm()
                         })
                         .catch(() => {
+                            MySwal.fire({
+                                title: "Oops!",
+                                icon: "error",
+                                text: "Something went wrong, try again later.",
+                                confirmButtonColor: "#68349B"
+                            })
                             alert('Error');
                         })
                         .finally(() => actions.setSubmitting(false))
