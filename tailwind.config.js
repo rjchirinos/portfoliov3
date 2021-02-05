@@ -26,7 +26,7 @@ module.exports = {
       }
     },
     backgroundPosition: {
-      "hero": "top 4rem right 0",
+      "hero": "top 0 right 0",
       "contact": "bottom -6rem left 10rem"
     },
     maxHeight: {
