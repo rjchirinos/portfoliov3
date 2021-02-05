@@ -23,6 +23,9 @@ module.exports = {
       text: {
         DEFAULT: "rgba(255, 255, 255, 0.72)",
         t2: "rgba(255, 255, 255, 0.54)"
+      },
+      error: {
+        DEFAULT: "rgba(220, 38, 38, .72)"
       }
     },
     backgroundPosition: {

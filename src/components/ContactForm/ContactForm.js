@@ -5,8 +5,15 @@ import TextArea from './TextArea';
 import Button from '../Button/Button';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import * as Yup from "yup";
 
 const MySwal = withReactContent(Swal)
+
+const validationSchema = Yup.object().shape({
+    name: Yup.string().required(),
+    email: Yup.string().email().required(),
+    message: Yup.string().required()
+})
 
 const ContactForm = () => {
 
@@ -25,6 +32,7 @@ const ContactForm = () => {
                     email: "",
                     message: ""
                 }}
+                validationSchema={validationSchema}
                 onSubmit={(values, actions) => {
                     fetch("/", {
                         method: "POST",
@@ -52,7 +60,7 @@ const ContactForm = () => {
                         .finally(() => actions.setSubmitting(false))
                 }}
             >
-                {({ values, setFieldValue }) => (
+                {({ errors, setFieldValue }) => (
                     <Form autoComplete="off" name="contact-form" data-netlify={true}>
                         <Field name="name">
                             {({ field }) => (
@@ -64,6 +72,7 @@ const ContactForm = () => {
                                         onChange={(value) => {
                                             setFieldValue(field.name, value);
                                         }}
+                                        error={errors.name}
                                     />
                                 </>
                             )}
@@ -78,6 +87,7 @@ const ContactForm = () => {
                                         onChange={(value) => {
                                             setFieldValue(field.name, value);
                                         }}
+                                        error={errors.email}
                                     />
                                 </>
                             )}
@@ -93,11 +103,12 @@ const ContactForm = () => {
                                         onChange={(value) => {
                                             setFieldValue(field.name, value);
                                         }}
+                                        error={errors.message}
                                     />
                                 </>
                             )}
                         </Field>
-                        <Button type="submit" onClick={() => { }}>Submit</Button>
+                        <Button type="submit" onClick={() => { console.log({ errors }) }}>Submit</Button>
                     </Form>
                 )}
             </Formik>

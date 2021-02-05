@@ -32,7 +32,8 @@
     "styled-components": "^5.2.1",
     "sweetalert2": "^10.14.0",
     "sweetalert2-react-content": "^3.2.2",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.2",
+    "yup": "^0.32.8"
   },
   "devDependencies": {
     "prettier": "2.2.1"
