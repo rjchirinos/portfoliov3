@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ChangingWord = ({ className }) => {
-    const wordsArray = ["webapps", "websites", "stores", "UIs"]
+    const wordsArray = ["webapps", "websites", "stores", "interfaces"]
     return (
         <span className={"overflow-hidden relative float-right h-16 -mt2.5 " + className}>
             <ul className="animate-flip">
