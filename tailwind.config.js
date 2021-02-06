@@ -46,7 +46,8 @@ module.exports = {
         "9/20": "calc((100% / 2) - 1rem)"
       },
       animation: {
-        "appear": "appear 0.8s linear"
+        "appear": "appear 0.8s linear",
+        "flip": "flip 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite"
       },
       keyframes: {
         appear: {
@@ -58,6 +59,18 @@ module.exports = {
             transform: "translateY(0)",
             opacity: "1"
           }
+        },
+        flip: {
+          "0%": { "margin-top": "-24rem" },
+          "5%": { "margin-top": "-18rem" },
+          "25%": { "margin-top": "-18rem" },
+          "30%": { "margin-top": "-12rem" },
+          "50%": { "margin-top": "-12rem" },
+          "55%": { "margin-top": "-6rem" },
+          "75%": { "margin-top": "-6rem" },
+          "80%": { "margin-top": "0px" },
+          "99.99%": { "margin-top": "0px" },
+          "100%": { "margin-top": "-18rem" }
         }
       }
     },
